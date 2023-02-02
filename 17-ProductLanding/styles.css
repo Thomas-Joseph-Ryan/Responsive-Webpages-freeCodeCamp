@@ -1,0 +1,183 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    height: max(8vh, 80px);
+    border-bottom: 1px solid lightblue;
+    box-shadow: 0px 4px 10px lightblue;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+#header > a {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding-left: 2%;
+    text-decoration: none;
+    color: black;
+}
+
+#header-img {
+    width: 70px;
+    margin-left: 1rem;
+    padding-right: 4%;
+}
+
+#brandname {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    margin-left: -3%;
+}
+
+#nav-bar {
+    width: 50%;
+    max-width: 500px;
+    height: 15vh;
+}
+
+#nav-bar > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+.nav-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px lightblue;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+  }
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin:0 50%;
+}
+
+/* HEADER FINISHED */
+
+main {
+    padding-top: 12vh;
+    top: 12vh;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Feature List */
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.feature-list {
+    list-style: none;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 0.4fr 4fr;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.feature > i {
+    grid-column: 1 / 2;
+    font-size: 4rem;
+}
+
+.feature > div {
+    grid-column: 2 / 3;
+}
+
+.fa-seedling {
+    width: 50px;
+}
+
+/* Showcase */
+
+#video-area {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    height: 50rem;
+    aspect-ratio: 16/9;
+}
+
+/* Enquiry form */
+
+#enquire {
+    padding-top: 3vh;
+}
+
+#enquire > p {
+    font-size: 1.5rem;
+}
+
+form {
+    display: block;
+    padding-top: 2%;
+}
+
+#email {
+    height: 3vh;
+    width: 40%;
+    text-align: center;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 30%;
+    height: 5vh;
+}

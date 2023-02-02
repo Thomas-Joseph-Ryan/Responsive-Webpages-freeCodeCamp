@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Toms freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey</p>
+    <div class="survey-box">
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Enter your name: <input id="name" name="name" type="text" placeholder="John Snow" required></label>
+          <label id="email-label" for="email">Enter your email: <input id="email" name="email" type="email" placeholder="JohnSnow@example.com" required></label>
+          <label id="number-label" for="number">Please enter your age *Optional: <input id="number" name="number" type="number" min="13" max="120" placeholder="22"></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">What would be your favourite type of pizza?</label>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Margarita</option>
+            <option value="2">Supreme</option>
+            <option value="3">Other</option>
+          </select>
+          <label>Would you rather:</label>
+          <label>Stay inside and game<input id="stay-inside" value="inside" type="radio" name="prefer"></label>
+          <label>Go to the beach<input id="go-beach" value="beach" type="radio" name="prefer"></label>
+        </fieldset>
+        <fieldset>
+          <label>Why do you like christmas</label>
+          <label><input value="1" type="checkbox" name="christmas">Presents</label>
+          <label><input value="2" type="checkbox" name="christmas">Giving</label>
+          <label><input value="3" type="checkbox" name="christmas">Seeing family</label>
+          <label><input value="4" type="checkbox" name="christmas">Eating lots of food</label>
+        </fieldset>
+        <fieldset>
+          <label>Any comments or suggestions?</label>
+          <textarea id="comments" name="comments" placeholder="I think..."></textarea>
+        </fieldset>
+        <input type="submit" value="submit" id="submit">
+      </form>
+    </div>
+  </body>
+</html>

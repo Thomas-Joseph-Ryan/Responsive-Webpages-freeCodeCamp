@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toms Guitars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/43658ceb7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <a href="#">
+            <img 
+                id="header-img" 
+                src="https://cdn-icons-png.flaticon.com/512/93/93022.png?w=740&t=st=1675127260~exp=1675127860~hmac=b71f7e1a9bd702291625270acc43636dadd19788c60a7355889ffe441b259d5a"
+                alt="A line drawn guitar as the logo for Toms Guitars"
+            >
+            <h1 id="brandname">
+                Tom's Guitars
+            </h1>
+        </a>
+        <nav id="nav-bar">
+            <ul>
+                <a class="nav-link" href="#feature-area">Features</a>
+                <a class="nav-link" href="#video-area">Showcase</a>
+                <a class="nav-link" href="#enquire">Enquire</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section role="region" aria-labelledby="feature-area">
+            <h1 class="heading" id="feature-area" >Features</h1>
+            <ul class="feature-list">
+                <li class="feature">
+                    <i class="fas fa-seedling"></i>
+                    <div>
+                        <h3>Responsibly Sourced Materials</h3>
+                        <p>
+                            All of our guitars are made of materials responsibly sourced
+                            from environmentally concious vendors
+                        </p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <i class="fas fa-hands"></i>
+                    <div>
+                        <h3>Hand Crafted</h3>
+                        <p>
+                            We have a team of fantastic luthiers who create each of these 
+                            guitars with complete attention to detail                           
+                        </p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <i class="fas fa-truck"></i>
+                    <div>
+                        <h3>Delivery</h3>
+                        <p>
+                            We ship our guitars straight to your door the day they are finished
+                            so you can get to making music asap!
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="video-area">
+            <iframe
+            id="video"
+            src="https://www.youtube.com/embed/LLzOhjtrQr0"
+            frameborder="0"
+            allowfullscreen
+            ></iframe>
+        </section>
+        <section id="enquire">
+            <h1 class="heading">
+                Enquire today
+            </h1>
+            <p>
+                Guitars are made to order, so contact us today and lets start creating a beautiful
+                guitar together!
+            </p>
+            <form 
+                id="form" 
+                method="post" 
+                action="https://www.freecodecamp.com/email-submit"
+            >
+                <input 
+                    id="email" 
+                    type="email" 
+                    name="email"
+                    placeholder="Enter your email here"
+                >
+                <input 
+                    type="submit" 
+                    id="submit" 
+                    value="Send Enquiry"
+                >
+            </form>
+        </section>
+    </main>
+</body>
+</html>

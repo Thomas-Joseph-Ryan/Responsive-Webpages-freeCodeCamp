@@ -1,0 +1,99 @@
+body {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    background-color:#121212;
+}
+
+h1, p, label {
+    margin: 1em auto;
+    color: #ebebeb;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 24px;
+
+}
+
+
+
+.survey-box {
+    background-color: #424242;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+  }
+  
+fieldset:last-of-type {
+border-bottom: none;
+}
+
+input, select, textarea {
+    background-color: #707070;
+    border: 1px solid #ABABAB;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #ebebeb;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 300px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 6px #333;
+    outline: none;
+    transition: all 0.2s;
+}
+  
+input[type="radio"]:checked {
+box-shadow: 0 0 0 2px #fff, 0 0 0 6px #333, inset 0 0 0 2px #333;
+}
+
+input[type="checkbox"] {
+appearance: none;
+width: 1.2em;
+height: 1.2em;
+background-color: #fff;
+border: 2px solid #333;
+border-radius: 50%;
+box-shadow: 0 0 0 2px #fff, 0 0 0 6px #333;
+outline: none;
+transition: all 0.2s;
+}
+
+input[type="checkbox"]:checked {
+box-shadow: 0 0 0 2px #fff, 0 0 0 6px #333, inset 0 0 0 2px #333;
+}

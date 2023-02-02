@@ -1,0 +1,56 @@
+* {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#image {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    border-radius: 1%;
+}
+
+main {
+    background-color: #f1f1f1;
+    border-radius: 1%;
+    margin: 4px;
+}
+
+#img-div {
+    background-color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 1%;
+    display: block;
+}
+
+#tribute-info {
+    margin: 2em;
+}
+
+ul {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#quote {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-style: italic;
+}
+
+#wiki-link {
+    padding-bottom: 20px;
+}
+
+#tribute-link:hover {
+    color: rgba(0, 0, 0, 0.4);;
+}
